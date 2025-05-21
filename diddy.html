@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tug'ilgan kun muborak!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1607082349566-1873427e92c8?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #secretMessage {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff4081;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Tug'ilgan kun muborak! 🎂</h1>
+    <button onclick="showMessage()">🎁 Sovg‘ani ochish</button>
+    <p id="secretMessage">
+      <!-- Bu yerga o'zingiz xohlagan tabrikni yozing -->
+      Таваллудеш муборак!
+	Aziz do‘stim, bugun sening hayotingdagi yana bir ajoyib sahifa ochildi! 🎈
+      Har doim kulib yur, orzularing ro‘yobga chiqsin! 🌟
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secretMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
